@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-size: 100%;
+line-height: 1.6875;
+}
+
+ul li a,
+ul li a:hover,
+section article a,
+section article a:hover {
+  color: white;
+}
+
+section article a {
+  background-color: #D9A657;
+}
+
+ul.row {
+  margin: 0;
+}
+
+nav div span.text-uppercase {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+body { font-size:100%;}
+h1, h2, h3, h4, h5, h6 { font-size: 200%;}
+#nav_992 { display: none;}
+#nav_1200 { display: flex;}
+ul li { border-left: 1px solid white; border-right: 1px solid right;}
+ul li:first-child { border-left: 0;}
+ul li:last-child { border-right: 0;}
+#slide_preview { display: flex!important; cursor: pointer;}
+}
+
+@media only screen and (max-width: 1200px) {
+body { font-size:90%;}
+h1, h2, h3, h4, h5, h6 { font-size: 190%;}
+#nav_992 {display: flex;}
+#nav_1200 {display: none;}
+#slide_preview { display: none!important;}
+}
+
+@media only screen and (max-width: 992px) {
+body { font-size:80%;}
+h1, h2, h3, h4, h5, h6 { font-size: 180%;}
+.navbar-nav {margin: 20px 0; font-size: 1rem;}
+#nav_992 {display: flex;}
+#nav_1200 {display: none;}
+}
+
+@media only screen and (max-width: 768px) {
+body { font-size:70%;}
+h1, h2, h3, h4, h5, h6 { font-size: 170%;}
+}
+
+@media only screen and (max-width: 576px) {
+body { font-size:60%;}
+h1, h2, h3, h4, h5, h6 { font-size: 160%;}
+div.container section article { padding: 0 10vw;}
+}
